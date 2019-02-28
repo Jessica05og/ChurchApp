@@ -1,0 +1,6 @@
+framework module Pods_ChurchApp {
+  umbrella header "Pods-ChurchApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
