@@ -410,7 +410,7 @@ D01 X4C9 - Dublin 1</string>
         <!--Login-->
         <scene sceneID="Qm3-k7-HPk">
             <objects>
-                <viewController id="13K-GX-v2p" sceneMemberID="viewController">
+                <viewController id="13K-GX-v2p" customClass="MainTabBarController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bOJ-Ge-51E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -442,6 +442,9 @@ D01 X4C9 - Dublin 1</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNX-dv-HCn">
                                 <rect key="frame" x="168.5" y="425" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="13K-GX-v2p" eventType="touchUpInside" id="Eii-Gm-Ve8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -463,10 +466,49 @@ D01 X4C9 - Dublin 1</string>
                         <viewLayoutGuide key="safeArea" id="tWX-dL-7nM"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Login" image="login" landscapeImage="login" id="of2-fH-ZgJ"/>
+                    <connections>
+                        <outlet property="emailTF" destination="7vc-iy-Hpj" id="FOw-bA-2Ag"/>
+                        <outlet property="passwordTF" destination="0Nd-EE-Uq5" id="60D-Wi-QIK"/>
+                        <segue destination="Hzv-bg-6ka" kind="show" identifier="GoHome" id="MHn-hI-KjL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lT-aX-Wja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-442.39999999999998" y="-388.15592203898052"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="xMT-Jf-8RU">
+            <objects>
+                <viewController storyboardIdentifier="loginVC" id="Hzv-bg-6ka" customClass="LoginViewController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w9r-r1-wVc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$UserEmail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mM-JK-jBk">
+                                <rect key="frame" x="145" y="323" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AF3-YP-bZ1">
+                                <rect key="frame" x="145" y="123" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jca-T7-bNa"/>
+                    </view>
+                    <connections>
+                        <outlet property="userEmailbl" destination="3mM-JK-jBk" id="bYb-Iv-O10"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AW7-Vt-SqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="-388"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ImT-xX-MNW">
@@ -544,7 +586,6 @@ D01 X4C9 - Dublin 1</string>
         <!--View Controller-->
         <scene sceneID="Mox-ZL-FJx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LdS-Z9-qqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="3kG-sb-Jg7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XS9-3q-CsG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -562,13 +603,13 @@ D01 X4C9 - Dublin 1</string>
                         <viewLayoutGuide key="safeArea" id="VWo-8N-qma"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LdS-Z9-qqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4130" y="263"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="I83-yY-gCJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hmZ-84-qVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="O0S-Ps-1mR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f2N-dH-ZgF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -586,6 +627,7 @@ D01 X4C9 - Dublin 1</string>
                         <viewLayoutGuide key="safeArea" id="ToW-Sn-PFS"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmZ-84-qVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3438" y="268"/>
         </scene>
