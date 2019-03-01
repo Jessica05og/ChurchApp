@@ -10,13 +10,17 @@ import UIKit
 import Firebase
 
 class LoginViewController: UIViewController {
-
-    @IBOutlet var userEmailbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        self.title = "homeLogin"
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    
 
 }

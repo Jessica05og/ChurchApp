@@ -21,69 +21,39 @@ class MainTabBarController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+        
        // let ref = Database.database().reference()
         
         }
-        
-//    @IBAction func loginButton(_ sender: UIButton) {
-//        //Get the Default auth UI object
-//        let authUI = FUIAuth.defaultAuthUI()
-//
-//        guard authUI != nil else {
-//
-//            //Log the error
-//            return
-//        }
-//
-//        // Set ourselves as the delegate
-//        authUI?.delegate = self
-//        // Get a reference to the auth UI view Controller
-//
-//        let authViewController = authUI!.authViewController()
-//        // show it
-//        present(authViewController, animated: true, completion: nil)
-//
-//    }
-    
-    
-//    @IBAction func SingIn(_ sender: UIButton) {
-//
-//
-//        Auth.auth().signIn(withEmail: self.email.text!, password: self.password.text!) { (user, error) in
-//
-//            if user != nil {
-//                print("User has sign Up")
-//            }
-//            if error != nil{
-//                print("=(")
-//            }
-//        }
-//
-//    }
-//
-//
-//
-//    @IBAction func SingUp(_ sender: UIButton) {
-//        Auth.auth().createUser(withEmail: self.email.text!, password: self.password.text!) { (user, error) in
-//
-//            if user != nil {
-//                print("User has sign up")
-//            }
-//            if error != nil{
-//                print("=(")
-//            }
-//        }
-//
-//    }
-    
     
     @IBAction func singIn(_ sender: UIButton) {
         
         Auth.auth().signIn(withEmail: self.email.text!, password: self.password.text!) { (user, error) in
             
             if user != nil {
-                print("User has sign Up")
+                print("User has sign IN")
+                
+//                //--------Call HOME VIEW LOGIN-----//
+//                
+//                let storyboard  = UIStoryboard(name: "Main", bundle: nil) // First create constant variable using storyboard
+//                
+//                let secondVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+//                
+//                self.navigationController?.pushViewController(secondVC, animated: true)
+//                
+//                //--------------------------------//
+                
             }
+            //--------Call HOME VIEW LOGIN-----//
+            
+            let storyboard  = UIStoryboard(name: "Main", bundle: nil) // First create constant variable using storyboard
+            
+            let secondVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            
+            self.navigationController?.pushViewController(secondVC, animated: true)
+            
+            //--------------------------------//
             if error != nil{
                 print("=(")
             }
@@ -106,24 +76,5 @@ class MainTabBarController: UIViewController {
     
     
 }
-    
-//extension MainTabBarController: FUIAuthDelegate{
-//
-//    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
-//
-//        // check if there was an error
-//        guard error == nil else {
-//            //Log the error
-//            return
-//        }
-//
-//       // authDataResult?.user.uid
-//
-//        performSegue(withIdentifier: "GoHome", sender: self)
-//
-//    }
-//
-//
-//}
 
 

@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="187"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qBn-vV-M5P">
-                                <rect key="frame" x="10" y="231" width="162" height="130"/>
+                                <rect key="frame" x="10" y="243" width="162" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selah Church Dublin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6F-Bl-mLc">
                                         <rect key="frame" x="0.0" y="0.0" width="162" height="20.5"/>
@@ -31,7 +31,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JTn-mX-66h">
-                                        <rect key="frame" x="0.0" y="20.5" width="162" height="76.5"/>
+                                        <rect key="frame" x="0.0" y="20.5" width="162" height="74.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">The Spencer Hotel
 Excise Walk, IFSC
@@ -40,7 +40,7 @@ D01 X4C9 - Dublin 1</string>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Her-lX-vFg">
-                                        <rect key="frame" x="0.0" y="97" width="162" height="33"/>
+                                        <rect key="frame" x="0.0" y="95" width="162" height="33"/>
                                         <color key="backgroundColor" red="0.32382241882190399" green="0.50905641283783964" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <state key="normal" title="GET LOCATION">
@@ -49,20 +49,18 @@ D01 X4C9 - Dublin 1</string>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Her-lX-vFg" firstAttribute="leading" secondItem="qBn-vV-M5P" secondAttribute="leading" id="FXD-Ao-I1g"/>
-                                    <constraint firstAttribute="trailing" secondItem="Her-lX-vFg" secondAttribute="trailing" id="GnD-Wu-g49"/>
-                                    <constraint firstItem="Her-lX-vFg" firstAttribute="top" secondItem="JTn-mX-66h" secondAttribute="bottom" id="MF2-SU-PA0"/>
-                                    <constraint firstAttribute="bottom" secondItem="Her-lX-vFg" secondAttribute="bottom" id="eCw-ha-0Wb"/>
-                                    <constraint firstAttribute="height" constant="130" id="vty-mH-HCl"/>
+                                    <constraint firstItem="JTn-mX-66h" firstAttribute="top" secondItem="n6F-Bl-mLc" secondAttribute="bottom" id="7f9-LW-k4m"/>
+                                    <constraint firstItem="Her-lX-vFg" firstAttribute="top" secondItem="JTn-mX-66h" secondAttribute="bottom" id="ZgO-Yi-SqX"/>
+                                    <constraint firstAttribute="height" constant="128" id="anp-jT-KfC"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="KwH-rf-23a" firstAttribute="trailing" secondItem="qBn-vV-M5P" secondAttribute="trailing" constant="203" id="7q3-n2-BUX"/>
+                            <constraint firstItem="KwH-rf-23a" firstAttribute="bottom" secondItem="qBn-vV-M5P" secondAttribute="bottom" constant="247" id="2WA-J8-u9B"/>
+                            <constraint firstAttribute="trailing" secondItem="qBn-vV-M5P" secondAttribute="trailing" constant="203" id="Dhu-sy-Rmw"/>
+                            <constraint firstItem="qBn-vV-M5P" firstAttribute="leading" secondItem="8Es-TQ-y8P" secondAttribute="leading" constant="10" id="IQm-wd-Od6"/>
                             <constraint firstItem="nAK-rr-Nhu" firstAttribute="height" secondItem="8Es-TQ-y8P" secondAttribute="height" multiplier="0.28" id="X2B-xM-uBP"/>
-                            <constraint firstItem="qBn-vV-M5P" firstAttribute="top" secondItem="nAK-rr-Nhu" secondAttribute="bottom" constant="24" id="Zmw-8G-zHP"/>
-                            <constraint firstItem="qBn-vV-M5P" firstAttribute="leading" secondItem="KwH-rf-23a" secondAttribute="leading" constant="10" id="bvq-UN-Z3z"/>
                             <constraint firstItem="nAK-rr-Nhu" firstAttribute="trailing" secondItem="KwH-rf-23a" secondAttribute="trailing" id="dpb-Dh-MRf"/>
                             <constraint firstItem="nAK-rr-Nhu" firstAttribute="top" secondItem="KwH-rf-23a" secondAttribute="top" id="dra-lu-ghq"/>
                             <constraint firstItem="nAK-rr-Nhu" firstAttribute="leading" secondItem="KwH-rf-23a" secondAttribute="leading" id="gPu-dD-OC2"/>
@@ -300,35 +298,13 @@ D01 X4C9 - Dublin 1</string>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="toR-Tl-86y">
                                         <rect key="frame" x="0.0" y="294.5" width="355" height="145.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-To-pEX">
-                                                <rect key="frame" x="0.0" y="0.0" width="176.5" height="145.5"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-wC-X49">
-                                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="145.5"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                                        <state key="normal" title="AFRICA" backgroundImage="Africa">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="MJt-TG-sbl" kind="show" id="RYw-th-jY8"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="4cd-wC-X49" secondAttribute="trailing" id="R9k-D4-xfu"/>
-                                                    <constraint firstAttribute="bottom" secondItem="4cd-wC-X49" secondAttribute="bottom" id="RPd-gW-BtD"/>
-                                                    <constraint firstItem="4cd-wC-X49" firstAttribute="leading" secondItem="sbm-To-pEX" secondAttribute="leading" id="Ypk-Bj-LHG"/>
-                                                    <constraint firstItem="4cd-wC-X49" firstAttribute="top" secondItem="sbm-To-pEX" secondAttribute="top" id="cUP-0D-dLe"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K35-m7-yWU">
-                                                <rect key="frame" x="178.5" y="0.0" width="176.5" height="145.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="145.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2w1-xp-8fl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="145.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="145.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                        <state key="normal" title="INDIA" backgroundImage="India">
+                                                        <state key="normal" title="INDIA" backgroundImage="Mission">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                                         </state>
@@ -422,9 +398,11 @@ D01 X4C9 - Dublin 1</string>
                                     <constraint firstAttribute="height" constant="105" id="asJ-gZ-32p"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Selah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="fYX-ta-z7f">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Selah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="fYX-ta-z7f">
                                 <rect key="frame" x="152" y="164" width="71" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="aX2-nJ-tVs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -466,9 +444,12 @@ D01 X4C9 - Dublin 1</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fYX-ta-z7f" secondAttribute="trailing" constant="136" id="4sJ-J8-PnF"/>
+                            <constraint firstItem="Nfp-fU-Q0v" firstAttribute="top" secondItem="fYX-ta-z7f" secondAttribute="bottom" constant="53.5" id="6bl-J2-pKu"/>
                             <constraint firstItem="Nfp-fU-Q0v" firstAttribute="centerY" secondItem="tWX-dL-7nM" secondAttribute="centerY" id="EDc-vg-2wf"/>
                             <constraint firstItem="Ezy-nv-Slg" firstAttribute="top" secondItem="tWX-dL-7nM" secondAttribute="top" constant="25.5" id="JaU-vC-vCk"/>
                             <constraint firstItem="tWX-dL-7nM" firstAttribute="trailing" secondItem="Ezy-nv-Slg" secondAttribute="trailing" constant="132.5" id="Rol-lA-i6Q"/>
+                            <constraint firstItem="fYX-ta-z7f" firstAttribute="leading" secondItem="bOJ-Ge-51E" secondAttribute="leadingMargin" constant="136" id="bQz-ca-0rm"/>
                             <constraint firstItem="Nfp-fU-Q0v" firstAttribute="centerX" secondItem="tWX-dL-7nM" secondAttribute="centerX" id="dfg-DI-wG1"/>
                             <constraint firstItem="Ezy-nv-Slg" firstAttribute="leading" secondItem="tWX-dL-7nM" secondAttribute="leading" constant="137.5" id="mkB-pl-9Id"/>
                         </constraints>
@@ -478,17 +459,16 @@ D01 X4C9 - Dublin 1</string>
                     <connections>
                         <outlet property="email" destination="7vc-iy-Hpj" id="2ij-If-Y4G"/>
                         <outlet property="password" destination="0Nd-EE-Uq5" id="hKt-bF-VLe"/>
-                        <segue destination="Hzv-bg-6ka" kind="show" identifier="GoHome" id="MHn-hI-KjL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lT-aX-Wja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-442.39999999999998" y="-388.15592203898052"/>
+            <point key="canvasLocation" x="358" y="-1243"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="xMT-Jf-8RU">
             <objects>
-                <viewController storyboardIdentifier="loginVC" id="Hzv-bg-6ka" customClass="LoginViewController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Hzv-bg-6ka" customClass="LoginViewController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w9r-r1-wVc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -517,86 +497,7 @@ D01 X4C9 - Dublin 1</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AW7-Vt-SqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="-388"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="4qf-UL-IWA">
-            <objects>
-                <viewController id="Oxw-pH-S4J" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ybi-4I-NIv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="IG3-vk-qcX">
-                                <rect key="frame" x="135" y="63" width="105" height="105"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="IG3-vk-qcX" secondAttribute="height" multiplier="0.8" id="3aM-6K-cIg"/>
-                                    <constraint firstAttribute="width" secondItem="IG3-vk-qcX" secondAttribute="height" multiplier="1:1" id="Nl3-Kk-scE"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6h4-0p-AtS">
-                                <rect key="frame" x="60" y="-173" width="255" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ofm-2n-U7f"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Selah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="3Xx-oN-HlC">
-                                <rect key="frame" x="152" y="-365" width="71" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20.5" id="whY-9B-pLn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vj4-eA-c6f">
-                                <rect key="frame" x="164" y="-106" width="47" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="a2d-a0-dCA"/>
-                                </constraints>
-                                <state key="normal" title="Sing In"/>
-                                <connections>
-                                    <action selector="singIn:" destination="13K-GX-v2p" eventType="touchUpInside" id="Zwl-Ft-3c3"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ys-TK-hhc">
-                                <rect key="frame" x="60" y="-244" width="255" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="W1v-g8-iAA"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Vj4-eA-c6f" firstAttribute="top" secondItem="6h4-0p-AtS" secondAttribute="bottom" constant="37" id="0qj-kn-0QR"/>
-                            <constraint firstItem="6h4-0p-AtS" firstAttribute="top" secondItem="3Ys-TK-hhc" secondAttribute="bottom" constant="41" id="22r-Vv-e5l"/>
-                            <constraint firstItem="s6U-Yr-hJY" firstAttribute="trailing" secondItem="IG3-vk-qcX" secondAttribute="trailing" constant="135" id="5v8-Oc-DCe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Vj4-eA-c6f" secondAttribute="trailing" constant="148" id="CYc-CI-dbp"/>
-                            <constraint firstItem="s6U-Yr-hJY" firstAttribute="trailing" secondItem="6h4-0p-AtS" secondAttribute="trailing" constant="60" id="FZ4-3f-eAf"/>
-                            <constraint firstItem="3Ys-TK-hhc" firstAttribute="leading" secondItem="s6U-Yr-hJY" secondAttribute="leading" constant="60" id="Jib-8y-DF0"/>
-                            <constraint firstItem="3Ys-TK-hhc" firstAttribute="top" secondItem="3Xx-oN-HlC" secondAttribute="bottom" constant="100.5" id="Tc4-l4-KRu"/>
-                            <constraint firstItem="s6U-Yr-hJY" firstAttribute="bottom" secondItem="Vj4-eA-c6f" secondAttribute="bottom" constant="181" id="Wqf-ev-4vI"/>
-                            <constraint firstItem="IG3-vk-qcX" firstAttribute="leading" secondItem="s6U-Yr-hJY" secondAttribute="leading" constant="135" id="XeV-J5-aQw"/>
-                            <constraint firstItem="s6U-Yr-hJY" firstAttribute="trailing" secondItem="3Ys-TK-hhc" secondAttribute="trailing" constant="60" id="YJu-dL-XdP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Xx-oN-HlC" secondAttribute="trailing" constant="136" id="a0r-no-xMs"/>
-                            <constraint firstItem="Vj4-eA-c6f" firstAttribute="leading" secondItem="Ybi-4I-NIv" secondAttribute="leadingMargin" constant="148" id="fms-pu-VZj"/>
-                            <constraint firstItem="3Xx-oN-HlC" firstAttribute="leading" secondItem="Ybi-4I-NIv" secondAttribute="leadingMargin" constant="136" id="hOz-hB-mVa"/>
-                            <constraint firstItem="IG3-vk-qcX" firstAttribute="top" secondItem="s6U-Yr-hJY" secondAttribute="top" constant="43" id="ioM-7L-gSH"/>
-                            <constraint firstItem="6h4-0p-AtS" firstAttribute="leading" secondItem="s6U-Yr-hJY" secondAttribute="leading" constant="60" id="s0o-Gx-3cL"/>
-                            <constraint firstItem="IG3-vk-qcX" firstAttribute="height" secondItem="Ybi-4I-NIv" secondAttribute="height" id="s6a-UV-Zv6"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="s6U-Yr-hJY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7cJ-sG-ThI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-442.39999999999998" y="333.28335832083962"/>
+            <point key="canvasLocation" x="1825" y="-2249"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lDK-rU-hEX">
@@ -611,7 +512,7 @@ D01 X4C9 - Dublin 1</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pX2-nJ-1Ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2045" y="-287"/>
+            <point key="canvasLocation" x="3769" y="-244"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="P2D-e0-GnN">
@@ -626,7 +527,7 @@ D01 X4C9 - Dublin 1</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fan-HV-81q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2733" y="-282"/>
+            <point key="canvasLocation" x="4812" y="-244"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jAV-Vx-MnB">
@@ -641,7 +542,7 @@ D01 X4C9 - Dublin 1</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJn-3k-YZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1357" y="-1039"/>
+            <point key="canvasLocation" x="1825" y="-1243"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qM6-RV-7WE">
@@ -656,7 +557,7 @@ D01 X4C9 - Dublin 1</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jOk-M3-7J1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2062" y="-1055"/>
+            <point key="canvasLocation" x="1825" y="-257"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="trJ-us-oH5">
@@ -671,7 +572,7 @@ D01 X4C9 - Dublin 1</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsQ-Ig-ozC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2727" y="-1055"/>
+            <point key="canvasLocation" x="2815" y="-258"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ImT-xX-MNW">
@@ -796,11 +697,10 @@ D01 X4C9 - Dublin 1</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Africa" width="400" height="400"/>
         <image name="Charity" width="343" height="239"/>
         <image name="Flashmob" width="343" height="239"/>
-        <image name="India" width="400" height="400"/>
         <image name="Logo" width="105.59999847412109" height="105.59999847412109"/>
+        <image name="Mission" width="414" height="215"/>
         <image name="OneMoreSong" width="343" height="239"/>
         <image name="Spencer" width="1244" height="834"/>
         <image name="WeekendAway" width="343" height="239"/>
