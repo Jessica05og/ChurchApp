@@ -14,7 +14,7 @@
 		EA02C7372226CB9500AAF29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA02C7362226CB9500AAF29F /* Assets.xcassets */; };
 		EA02C73A2226CB9500AAF29F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA02C7382226CB9500AAF29F /* LaunchScreen.storyboard */; };
 		EA02C7422226D87400AAF29F /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C7412226D87400AAF29F /* AboutUsVC.swift */; };
-		EA02C7442226D8B500AAF29F /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C7432226D8B500AAF29F /* ContactUsVC.swift */; };
+		EA02C7442226D8B500AAF29F /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C7432226D8B500AAF29F /* LocationVC.swift */; };
 		EA02C7462226D8E800AAF29F /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C7452226D8E800AAF29F /* GroupsVC.swift */; };
 		EA7D3DCB22282C64003C1122 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D3DCA22282C64003C1122 /* LoginViewController.swift */; };
 		EA7D3DCD22283569003C1122 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA7D3DCC22283569003C1122 /* GoogleService-Info.plist */; };
@@ -32,7 +32,7 @@
 		EA02C7392226CB9500AAF29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA02C73B2226CB9500AAF29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA02C7412226D87400AAF29F /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
-		EA02C7432226D8B500AAF29F /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		EA02C7432226D8B500AAF29F /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		EA02C7452226D8E800AAF29F /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		EA7D3DCA22282C64003C1122 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA7D3DCC22283569003C1122 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				EA7D3DCA22282C64003C1122 /* LoginViewController.swift */,
 				EA02C7312226CB9300AAF29F /* MainTabBarController.swift */,
 				EA02C7412226D87400AAF29F /* AboutUsVC.swift */,
-				EA02C7432226D8B500AAF29F /* ContactUsVC.swift */,
+				EA02C7432226D8B500AAF29F /* LocationVC.swift */,
 				EA02C7452226D8E800AAF29F /* GroupsVC.swift */,
 				EA02C7332226CB9300AAF29F /* Main.storyboard */,
 				EAE3547B222FF75C00A7F2F5 /* SocialMediaVC.swift */,
@@ -259,7 +259,7 @@
 				EAE3547C222FF75C00A7F2F5 /* SocialMediaVC.swift in Sources */,
 				EA7D3DCB22282C64003C1122 /* LoginViewController.swift in Sources */,
 				EA02C7322226CB9300AAF29F /* MainTabBarController.swift in Sources */,
-				EA02C7442226D8B500AAF29F /* ContactUsVC.swift in Sources */,
+				EA02C7442226D8B500AAF29F /* LocationVC.swift in Sources */,
 				EA02C7422226D87400AAF29F /* AboutUsVC.swift in Sources */,
 				EA02C7302226CB9300AAF29F /* AppDelegate.swift in Sources */,
 				EA02C7462226D8E800AAF29F /* GroupsVC.swift in Sources */,

@@ -21,10 +21,6 @@ class MainTabBarController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
-       // let ref = Database.database().reference()
-        
         }
     
     @IBAction func singIn(_ sender: UIButton) {
@@ -34,17 +30,7 @@ class MainTabBarController: UIViewController {
             if user != nil {
                 print("User has sign IN")
                 
-//                //--------Call HOME VIEW LOGIN-----//
-//                
-//                let storyboard  = UIStoryboard(name: "Main", bundle: nil) // First create constant variable using storyboard
-//                
-//                let secondVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-//                
-//                self.navigationController?.pushViewController(secondVC, animated: true)
-//                
-//                //--------------------------------//
-                
-            }
+            
             //--------Call HOME VIEW LOGIN-----//
             
             let storyboard  = UIStoryboard(name: "Main", bundle: nil) // First create constant variable using storyboard
@@ -52,6 +38,7 @@ class MainTabBarController: UIViewController {
             let secondVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
             
             self.navigationController?.pushViewController(secondVC, animated: true)
+            }
             
             //--------------------------------//
             if error != nil{
