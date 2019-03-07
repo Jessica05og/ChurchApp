@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "socialMedia.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "apple-email-iphone-17663.png",
       "scale" : "2x"
     },
     {
