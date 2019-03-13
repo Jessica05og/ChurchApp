@@ -16,11 +16,9 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     @IBOutlet weak var label: UILabel!
     
 //--------------[GROUP CHOICE]------------------
-    @IBOutlet weak var labelGroup: UILabel!
     @IBOutlet weak var pickerVireGroup: UIPickerView!
-
-    
-    
+    @IBOutlet weak var labelGroup: UILabel!
+   
     //List of elements on PickerView
     let position = ["Leader", "Member", "Admin"]
     // Func section row that we want
@@ -45,21 +43,21 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 //--------------------------------------------------------------------------------------------------
     //List of elements on PickerView
     let groups = ["Media", "Welcome", "One More Song","Translation","Breaking of Bread"]
-    // Func section row that we want
-    func numberOfComponentsGroups(in pickerVireGroup: UIPickerView) ->Int{
+    //Func section row that we want
+    func numberOfComponents2(in pickerVireGroup: UIPickerView) ->Int{
         return 1
     }
     // what text should be in each row
-    func pickerVireGroup(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return position[row]
+    func pickerVireGroup(_ pickerVireGroup: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return groups[row]
     }
     // return how many rows we want
-    func pickerVireGroup(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerVireGroup(_ pickerVireGroup: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return groups.count
     }
     // diplay which row picked
-    func pickerVireGroup(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        label.text = position[row]
+    func pickerVireGroup(_ pickerVireGroup: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        labelGroup.text = groups[row]
     }
 //--------------------------------------------------------------------------------------------------
     
