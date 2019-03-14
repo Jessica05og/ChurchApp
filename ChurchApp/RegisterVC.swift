@@ -7,11 +7,34 @@
 //
 
 import UIKit
+import FirebaseDatabase
+
 
 class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-//--------------[POSITION CHOICE]-----------------
+    var ref: DatabaseReference?
+    var countUsers = 0;
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        ref = Database.database().reference(withPath: "User")
+        
+        ref!.observe(.value, with: {snapshot in
+            
+            
+            guard let values = snapshot.value as? [AnyObject] else{
+                return
+            }
+            
+            self.countUsers = values.count
+        })
+    }
+//--------------------[Oltlets]-----------------
+    @IBOutlet weak var NameTextFild: UITextField!
+    @IBOutlet weak var EmailTextFild: UITextField!
+    @IBOutlet weak var ContactNumberTextFild: UITextField!
+    
+    //-----------[POSITION CHOICE]---------
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var label: UILabel!
     
@@ -63,13 +86,13 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     
 
 
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBAction func CommitButton(_ sender: Any) {
+        
+        
+        
+        ref?.child(String(countUsers)).child("name").setValue(NameTextFild.text)
+        ref?.child(String(countUsers)).child("email").setValue(EmailTextFild.text)
+        ref?.child(String(countUsers)).child("tel").setValue(ContactNumberTextFild.text)
     }
     
-
-
 }
