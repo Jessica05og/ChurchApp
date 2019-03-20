@@ -15,5 +15,8 @@ target 'ChurchApp' do
   # pod 'FirebaseUI/Google'
 
 
+  pod 'TinyConstraints'
+
+
 
 end

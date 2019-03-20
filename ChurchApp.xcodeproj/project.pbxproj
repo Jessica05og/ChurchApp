@@ -16,6 +16,7 @@
 		EA02C7422226D87400AAF29F /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C7412226D87400AAF29F /* AboutUsVC.swift */; };
 		EA02C7442226D8B500AAF29F /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C7432226D8B500AAF29F /* LocationVC.swift */; };
 		EA02C7462226D8E800AAF29F /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C7452226D8E800AAF29F /* GroupsVC.swift */; };
+		EA06FFA42241BE1B0091F90B /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06FFA32241BE1B0091F90B /* Extentions.swift */; };
 		EA7D3DCB22282C64003C1122 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D3DCA22282C64003C1122 /* LoginViewController.swift */; };
 		EA7D3DCD22283569003C1122 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA7D3DCC22283569003C1122 /* GoogleService-Info.plist */; };
 		EAE3547C222FF75C00A7F2F5 /* SocialMediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3547B222FF75C00A7F2F5 /* SocialMediaVC.swift */; };
@@ -35,6 +36,7 @@
 		EA02C7412226D87400AAF29F /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 		EA02C7432226D8B500AAF29F /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		EA02C7452226D8E800AAF29F /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
+		EA06FFA32241BE1B0091F90B /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		EA7D3DCA22282C64003C1122 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA7D3DCC22283569003C1122 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAE3547B222FF75C00A7F2F5 /* SocialMediaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaVC.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				EA02C7452226D8E800AAF29F /* GroupsVC.swift */,
 				EA02C7332226CB9300AAF29F /* Main.storyboard */,
 				EAE9F1DA22318CB10004241D /* RegisterVC.swift */,
+				EA06FFA32241BE1B0091F90B /* Extentions.swift */,
 				EAE3547B222FF75C00A7F2F5 /* SocialMediaVC.swift */,
 				EA02C7362226CB9500AAF29F /* Assets.xcassets */,
 				EA02C7382226CB9500AAF29F /* LaunchScreen.storyboard */,
@@ -191,6 +194,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-ChurchApp/Pods-ChurchApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -200,6 +204,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -267,6 +272,7 @@
 				EA02C7422226D87400AAF29F /* AboutUsVC.swift in Sources */,
 				EA02C7302226CB9300AAF29F /* AppDelegate.swift in Sources */,
 				EA02C7462226D8E800AAF29F /* GroupsVC.swift in Sources */,
+				EA06FFA42241BE1B0091F90B /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

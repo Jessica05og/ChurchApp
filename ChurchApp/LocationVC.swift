@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class LocationVC: UIViewController {
 
@@ -29,5 +31,28 @@ class LocationVC: UIViewController {
         
     }
     
-
+    @IBAction func WatchVideoClick(_ sender: Any) {
+        
+        playVideo()
+    }
+    // Video from youtube
+    // How to get to Selah Church
+    
+    let videoURL = "https://www.youtube.com/watch?v=C-diaEUM8KU"
+    
+    func playVideo(){
+        let videoURL = NSURL(string: self.videoURL)!
+        
+        let player = AVPlayer(url:  videoURL as URL)
+        let playerVC = AVPlayerViewController()
+        
+        playerVC.player = player
+        
+        self.present(playerVC, animated: true)
+        { () -> Void in
+            
+            playerVC.player!.play()
+            
+        }
+    }
 }
