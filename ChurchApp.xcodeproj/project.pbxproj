@@ -17,6 +17,9 @@
 		EA02C7442226D8B500AAF29F /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C7432226D8B500AAF29F /* LocationVC.swift */; };
 		EA02C7462226D8E800AAF29F /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C7452226D8E800AAF29F /* GroupsVC.swift */; };
 		EA06FFA42241BE1B0091F90B /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06FFA32241BE1B0091F90B /* Extentions.swift */; };
+		EA6FDD5922459981004D4803 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6FDD5822459981004D4803 /* MessageVC.swift */; };
+		EA6FDD5B22459A07004D4803 /* ComposeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6FDD5A22459A07004D4803 /* ComposeVC.swift */; };
+		EA6FDD5E2245A2D4004D4803 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6FDD5D2245A2D4004D4803 /* TextTableViewCell.swift */; };
 		EA7D3DCB22282C64003C1122 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D3DCA22282C64003C1122 /* LoginViewController.swift */; };
 		EA7D3DCD22283569003C1122 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA7D3DCC22283569003C1122 /* GoogleService-Info.plist */; };
 		EAE3547C222FF75C00A7F2F5 /* SocialMediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3547B222FF75C00A7F2F5 /* SocialMediaVC.swift */; };
@@ -37,6 +40,9 @@
 		EA02C7432226D8B500AAF29F /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		EA02C7452226D8E800AAF29F /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		EA06FFA32241BE1B0091F90B /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		EA6FDD5822459981004D4803 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		EA6FDD5A22459A07004D4803 /* ComposeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeVC.swift; sourceTree = "<group>"; };
+		EA6FDD5D2245A2D4004D4803 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		EA7D3DCA22282C64003C1122 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA7D3DCC22283569003C1122 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAE3547B222FF75C00A7F2F5 /* SocialMediaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaVC.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 		EA02C72E2226CB9300AAF29F /* ChurchApp */ = {
 			isa = PBXGroup;
 			children = (
+				EA6FDD5C22459A1E004D4803 /* Message */,
 				EA02C72F2226CB9300AAF29F /* AppDelegate.swift */,
 				EA7D3DCA22282C64003C1122 /* LoginViewController.swift */,
 				EA02C7312226CB9300AAF29F /* MainTabBarController.swift */,
@@ -110,6 +117,16 @@
 				EA7D3DCC22283569003C1122 /* GoogleService-Info.plist */,
 			);
 			path = ChurchApp;
+			sourceTree = "<group>";
+		};
+		EA6FDD5C22459A1E004D4803 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				EA6FDD5A22459A07004D4803 /* ComposeVC.swift */,
+				EA6FDD5822459981004D4803 /* MessageVC.swift */,
+				EA6FDD5D2245A2D4004D4803 /* TextTableViewCell.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +285,11 @@
 				EAE9F1DB22318CB10004241D /* RegisterVC.swift in Sources */,
 				EA7D3DCB22282C64003C1122 /* LoginViewController.swift in Sources */,
 				EA02C7322226CB9300AAF29F /* MainTabBarController.swift in Sources */,
+				EA6FDD5B22459A07004D4803 /* ComposeVC.swift in Sources */,
 				EA02C7442226D8B500AAF29F /* LocationVC.swift in Sources */,
+				EA6FDD5E2245A2D4004D4803 /* TextTableViewCell.swift in Sources */,
 				EA02C7422226D87400AAF29F /* AboutUsVC.swift in Sources */,
+				EA6FDD5922459981004D4803 /* MessageVC.swift in Sources */,
 				EA02C7302226CB9300AAF29F /* AppDelegate.swift in Sources */,
 				EA02C7462226D8E800AAF29F /* GroupsVC.swift in Sources */,
 				EA06FFA42241BE1B0091F90B /* Extentions.swift in Sources */,

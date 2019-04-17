@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wPD-JY-4cK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LCp-mq-892">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -641,14 +641,6 @@ D01 X4C9 - Dublin 1</string>
                                     <segue destination="Afu-2x-Ziu" kind="show" id="t8v-Rk-eDL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULR-kN-rcy">
-                                <rect key="frame" x="67" y="344" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SCALE"/>
-                                <connections>
-                                    <segue destination="zPR-1q-bEq" kind="show" id="YLv-rt-Qot"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nw-Sx-ezk">
                                 <rect key="frame" x="67" y="382" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -663,6 +655,14 @@ D01 X4C9 - Dublin 1</string>
                                 <state key="normal" title="HOLIDAYS"/>
                                 <connections>
                                     <segue destination="LHS-by-8fu" kind="show" id="I9V-lX-zqH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULR-kN-rcy">
+                                <rect key="frame" x="67" y="344" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TESTEMONY"/>
+                                <connections>
+                                    <segue destination="P2x-M3-dsp" kind="show" id="Lcv-9l-lKe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -713,6 +713,108 @@ D01 X4C9 - Dublin 1</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pX2-nJ-1Ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4380" y="-404"/>
+        </scene>
+        <!--MessageVC-->
+        <scene sceneID="zhn-gW-Pzg">
+            <objects>
+                <tableViewController id="qMn-hl-b9D" customClass="MessageVC" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HAG-Gy-5e9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Text" rowHeight="166" id="WnO-Sc-9OB" customClass="TextTableViewCell" customModule="ChurchApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="166"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WnO-Sc-9OB" id="auV-WI-3Mc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="165.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFj-Wd-D2l">
+                                            <rect key="frame" x="16" y="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji3-sD-7cZ">
+                                            <rect key="frame" x="317" y="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hPH-IW-jOQ">
+                                            <rect key="frame" x="16" y="40" width="343" height="98"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qMn-hl-b9D" id="1yw-sk-knH"/>
+                            <outlet property="delegate" destination="qMn-hl-b9D" id="IWq-T3-xAA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="e7u-OE-iTk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="u8I-Md-3wM">
+                            <connections>
+                                <segue destination="Clo-5b-Kcw" kind="show" id="sID-hU-RFQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJj-RY-yOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6079.1999999999998" y="-404.34782608695656"/>
+        </scene>
+        <!--ComposeVC-->
+        <scene sceneID="OCr-aF-Ave">
+            <objects>
+                <viewController id="Clo-5b-Kcw" customClass="ComposeVC" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NeC-w1-BRe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v76-nN-lKg">
+                                <rect key="frame" x="317" y="209" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Jessica" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-1A-s1y">
+                                <rect key="frame" x="16" y="103" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fP4-Lj-3t1"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Done" style="done" systemItem="done" id="27H-cd-g3B">
+                            <connections>
+                                <action selector="Send:" destination="Clo-5b-Kcw" id="NDk-Y0-Fda"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="CharRemaining" destination="v76-nN-lKg" id="zlR-J8-Cof"/>
+                        <outlet property="Message" destination="t7d-1A-s1y" id="0ga-C0-ubk"/>
+                        <outlet property="fv" destination="t7d-1A-s1y" id="978-f9-zod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORn-mF-QeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6998" y="-404"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kNZ-tg-JDS">
@@ -962,34 +1064,6 @@ D01 X4C9 - Dublin 1</string>
             </objects>
             <point key="canvasLocation" x="5456.8000000000002" y="-1908.3958020989508"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="trJ-us-oH5">
-            <objects>
-                <viewController id="zPR-1q-bEq" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="B4p-bx-eJ5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxo-pI-mFE">
-                                <rect key="frame" x="16" y="64" width="355" height="29"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="IBx-uh-Wm4" firstAttribute="trailing" secondItem="kxo-pI-mFE" secondAttribute="trailing" constant="4" id="6jH-DC-z6d"/>
-                            <constraint firstItem="kxo-pI-mFE" firstAttribute="top" secondItem="IBx-uh-Wm4" secondAttribute="top" id="8sp-pD-9ux"/>
-                            <constraint firstItem="kxo-pI-mFE" firstAttribute="leading" secondItem="IBx-uh-Wm4" secondAttribute="leading" constant="16" id="WFl-8p-PsF"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="IBx-uh-Wm4"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BsQ-Ig-ozC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5065" y="-404"/>
-        </scene>
         <!--Login-->
         <scene sceneID="Uad-9Z-0N5">
             <objects>
@@ -1046,22 +1120,40 @@ D01 X4C9 - Dublin 1</string>
             </objects>
             <point key="canvasLocation" x="3257" y="-1390"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RL6-rj-oBD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P2x-M3-dsp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gnI-1p-K8X">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qMn-hl-b9D" kind="relationship" relationship="rootViewController" id="3Fm-CU-4Ff"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yic-YV-9BU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5140" y="-404.34782608695656"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Charity" width="343" height="239"/>
-        <image name="Flashmob" width="343" height="239"/>
+        <image name="Charity" width="114.33333587646484" height="79.666664123535156"/>
+        <image name="Flashmob" width="114.33333587646484" height="79.666664123535156"/>
         <image name="GivePage" width="414" height="896"/>
-        <image name="Logo" width="105.59999847412109" height="105.59999847412109"/>
-        <image name="OneMoreSong" width="343" height="239"/>
-        <image name="Spencer" width="1244" height="834"/>
-        <image name="WeekendAway" width="343" height="239"/>
-        <image name="back" width="838.35614013671875" height="315.61642456054688"/>
+        <image name="Logo" width="220" height="220"/>
+        <image name="OneMoreSong" width="114.33333587646484" height="79.666664123535156"/>
+        <image name="Spencer" width="622" height="417"/>
+        <image name="WeekendAway" width="114.33333587646484" height="79.666664123535156"/>
+        <image name="back" width="850" height="320"/>
         <image name="calendar" width="25" height="25"/>
         <image name="discover" width="1600" height="1066"/>
-        <image name="give" width="100" height="100"/>
-        <image name="home" width="50" height="50"/>
-        <image name="location" width="50" height="50"/>
-        <image name="login" width="75" height="75"/>
+        <image name="give" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="home" width="25" height="25"/>
+        <image name="location" width="25" height="25"/>
+        <image name="login" width="25" height="25"/>
         <image name="mission" width="1600" height="1066"/>
         <image name="socialMedia" width="414" height="896"/>
         <image name="way" width="3456" height="2304"/>
