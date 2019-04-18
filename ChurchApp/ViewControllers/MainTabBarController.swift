@@ -31,7 +31,7 @@ class MainTabBarController: UIViewController {
             
             //--------Call HOME VIEW LOGIN-----//
             
-            let storyboard  = UIStoryboard(name: "Main", bundle: nil) // First create constant variable using storyboard
+            let storyboard  = UIStoryboard(name: "Manager", bundle: nil) // First create constant variable using storyboard
             
             let secondVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
             

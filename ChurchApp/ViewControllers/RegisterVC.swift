@@ -94,12 +94,16 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
         let pass = String(Password.text!)
         let email = String(EmailTextFild.text!)
         
-        Auth.auth().createUser(withEmail: email, password: pass ){ (authResult, error) in
-            
-            guard (authResult?.user) != nil else { return }; if error != nil {
-    
+        if ValidPass(pass1: Password.text ?? "", pass2: Password2.text ?? "."){
+            Auth.auth().createUser(withEmail: email, password: pass ){ (authResult, error) in
+                
+                guard (authResult?.user) != nil else { return }; if error != nil {
+                    
+                }
             }
         }
+        
+        
     }
     
     
