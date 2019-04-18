@@ -53,7 +53,7 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 
     
     //List of elements on PickerView
-    let position = ["--Select--","Leader", "Member", "Admin"]
+    let position = ["Member","Leader", "Admin"]
     // Func section row that we want
     func numberOfComponents(in pickerView: UIPickerView) ->Int{
         return 1
@@ -85,19 +85,27 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 
 
     @IBAction func CommitButton(_ sender: Any) {
-        ref?.child(String(countUsers)).child("name").setValue(NameTextFild.text)
-        ref?.child(String(countUsers)).child("email").setValue(EmailTextFild.text)
-        ref?.child(String(countUsers)).child("contact").setValue(ContactNumberTextFild.text)
-        ref?.child(String(countUsers)).child("position").setValue(UserPosition.text)
-       
-
+        
         let pass = String(Password.text!)
         let email = String(EmailTextFild.text!)
+        
+        if !ValidTypeMember(){
+            return
+        }
         
         if ValidPass(pass1: Password.text ?? "", pass2: Password2.text ?? "."){
             Auth.auth().createUser(withEmail: email, password: pass ){ (authResult, error) in
                 
-                guard (authResult?.user) != nil else { return }; if error != nil {
+                if authResult?.user != nil {
+                    self.ref?.child(String(self.countUsers)).child("name").setValue(self.NameTextFild.text)
+                    self.ref?.child(String(self.countUsers)).child("email").setValue(self.EmailTextFild.text)
+                    self.ref?.child(String(self.countUsers)).child("contact").setValue(self.ContactNumberTextFild.text)
+                    self.ref?.child(String(self.countUsers)).child("position").setValue(self.UserPosition.text)
+                    
+                    let storyboard = UIStoryboard(name: "Manager", bundle: nil);
+                    let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") 
+                    self.present(vc, animated: true, completion: nil);
+
                     
                 }
             }
@@ -110,17 +118,25 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     func ValidPass(pass1: String, pass2: String) -> Bool {
 
         if pass1 == pass2{
-            if (pass1.count < 5) || ( pass1.count > 8) {
-                
-                return true
-            }else{
-                label.text = "passwort between 6-8 digits"
+            if (pass1.count <= 5)  {
+                label.text = "passwort greater than 5"
+                return false
             }
-            return true
         }else{
             label.text = "Password doesn't match"
             return false
         }
+        label.text = ""
+        return true
+    }
+    
+    
+    func ValidTypeMember() -> Bool{
+        if UserPosition.text == "Select"{
+            label.text = "Select a type of member"
+            return false
+        }
+        return true
     }
 }
 
