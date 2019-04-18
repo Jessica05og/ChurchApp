@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bZv-My-RK6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--location-->
+        <scene sceneID="VCr-0w-DIT">
+            <objects>
+                <viewController id="bZv-My-RK6" customClass="LocationVC" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WC7-9y-sAb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spencer" translatesAutoresizingMaskIntoConstraints="NO" id="iu9-Fw-2L9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nGA-av-ftc">
+                                <rect key="frame" x="10" y="300.5" width="254" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="JEj-OO-GdL"/>
+                                </constraints>
+                                <string key="text">The Spencer Hotel
+Excise Walk, IFSC
+D01 X4C9 - Dublin 1</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selah Church Dublin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZK-JI-KBT">
+                                <rect key="frame" x="10" y="255" width="394" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6i-Xc-FPP">
+                                <rect key="frame" x="10" y="400.5" width="394" height="33"/>
+                                <color key="backgroundColor" red="0.32382241880000001" green="0.50905641280000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="GET LOCATION">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Location:" destination="bZv-My-RK6" eventType="touchUpInside" id="Kzz-Yw-TZc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coF-Ww-4fQ">
+                                <rect key="frame" x="10" y="443.5" width="394" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Watch Video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="WatchVideoClick:" destination="bZv-My-RK6" eventType="touchUpInside" id="ToO-zk-d33"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z6i-Xc-FPP" firstAttribute="top" secondItem="nGA-av-ftc" secondAttribute="bottom" constant="15" id="3ym-CC-kPk"/>
+                            <constraint firstItem="iu9-Fw-2L9" firstAttribute="trailing" secondItem="bAt-cO-le4" secondAttribute="trailing" id="4Zg-YD-s0B"/>
+                            <constraint firstItem="bAt-cO-le4" firstAttribute="trailing" secondItem="nGA-av-ftc" secondAttribute="trailing" constant="150" id="5Qw-0s-1KJ"/>
+                            <constraint firstItem="coF-Ww-4fQ" firstAttribute="leading" secondItem="bAt-cO-le4" secondAttribute="leading" constant="10" id="999-Ru-OEr"/>
+                            <constraint firstItem="coF-Ww-4fQ" firstAttribute="top" secondItem="z6i-Xc-FPP" secondAttribute="bottom" constant="10" id="CLs-6j-ceK"/>
+                            <constraint firstItem="TZK-JI-KBT" firstAttribute="top" secondItem="iu9-Fw-2L9" secondAttribute="bottom" constant="30" id="IOR-CM-9gH"/>
+                            <constraint firstItem="bAt-cO-le4" firstAttribute="trailing" secondItem="z6i-Xc-FPP" secondAttribute="trailing" constant="10" id="Li6-LW-18f"/>
+                            <constraint firstItem="iu9-Fw-2L9" firstAttribute="leading" secondItem="bAt-cO-le4" secondAttribute="leading" id="STq-Q6-0Zv"/>
+                            <constraint firstItem="nGA-av-ftc" firstAttribute="top" secondItem="TZK-JI-KBT" secondAttribute="bottom" constant="20" id="Wfc-mc-cq7"/>
+                            <constraint firstItem="coF-Ww-4fQ" firstAttribute="height" secondItem="WC7-9y-sAb" secondAttribute="height" multiplier="0.05" constant="1" id="Yo9-S7-Uqt"/>
+                            <constraint firstItem="TZK-JI-KBT" firstAttribute="leading" secondItem="bAt-cO-le4" secondAttribute="leading" constant="10" id="aEU-CV-HAr"/>
+                            <constraint firstItem="nGA-av-ftc" firstAttribute="leading" secondItem="bAt-cO-le4" secondAttribute="leading" constant="10" id="bgu-56-HOm"/>
+                            <constraint firstItem="z6i-Xc-FPP" firstAttribute="leading" secondItem="bAt-cO-le4" secondAttribute="leading" constant="10" id="c9e-Vc-rWa"/>
+                            <constraint firstItem="iu9-Fw-2L9" firstAttribute="top" secondItem="WC7-9y-sAb" secondAttribute="top" id="cgm-6i-PAK"/>
+                            <constraint firstItem="bAt-cO-le4" firstAttribute="trailing" secondItem="TZK-JI-KBT" secondAttribute="trailing" constant="10" id="dj5-4c-e6N"/>
+                            <constraint firstItem="bAt-cO-le4" firstAttribute="trailing" secondItem="coF-Ww-4fQ" secondAttribute="trailing" constant="10" id="gJm-14-D8Z"/>
+                            <constraint firstItem="iu9-Fw-2L9" firstAttribute="height" secondItem="WC7-9y-sAb" secondAttribute="height" multiplier="0.25" constant="1" id="npd-JB-4kg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bAt-cO-le4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="location" image="location" id="TDU-X8-Nz3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBf-E4-A8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="-432.23388305847078"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Spencer" width="622" height="417"/>
+        <image name="location" width="25" height="25"/>
+    </resources>
+</document>

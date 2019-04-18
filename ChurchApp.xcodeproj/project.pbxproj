@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C66F10BB2CF649FC45A5155A /* Pods_ChurchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF63BBC057EDEA773DE5685 /* Pods_ChurchApp.framework */; };
+		DEBE3BA7226864C900E047F5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE3BA6226864C900E047F5 /* Home.storyboard */; };
+		DEBE3BA92268693400E047F5 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE3BA82268693400E047F5 /* Calendar.storyboard */; };
+		DEBE3BAB22686A3E00E047F5 /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE3BAA22686A3E00E047F5 /* Location.storyboard */; };
+		DEBE3BAD22686A5100E047F5 /* Give.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE3BAC22686A5000E047F5 /* Give.storyboard */; };
+		DEBE3BAF22686B6C00E047F5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE3BAE22686B6C00E047F5 /* Login.storyboard */; };
+		DEBE3BB122686DF600E047F5 /* Manager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE3BB022686DF600E047F5 /* Manager.storyboard */; };
 		DEC521852267CE9A0060E6AA /* RemoveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC521842267CE9A0060E6AA /* RemoveVC.swift */; };
 		EA02C7302226CB9300AAF29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C72F2226CB9300AAF29F /* AppDelegate.swift */; };
 		EA02C7322226CB9300AAF29F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C7312226CB9300AAF29F /* MainTabBarController.swift */; };
@@ -30,6 +36,12 @@
 /* Begin PBXFileReference section */
 		4821A6EF20159ADDDE1D6154 /* Pods-ChurchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchApp.debug.xcconfig"; path = "Target Support Files/Pods-ChurchApp/Pods-ChurchApp.debug.xcconfig"; sourceTree = "<group>"; };
 		58F62EEF7044D55A12CA881E /* Pods-ChurchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchApp.release.xcconfig"; path = "Target Support Files/Pods-ChurchApp/Pods-ChurchApp.release.xcconfig"; sourceTree = "<group>"; };
+		DEBE3BA6226864C900E047F5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		DEBE3BA82268693400E047F5 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		DEBE3BAA22686A3E00E047F5 /* Location.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
+		DEBE3BAC22686A5000E047F5 /* Give.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Give.storyboard; sourceTree = "<group>"; };
+		DEBE3BAE22686B6C00E047F5 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		DEBE3BB022686DF600E047F5 /* Manager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Manager.storyboard; sourceTree = "<group>"; };
 		DEC521842267CE9A0060E6AA /* RemoveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveVC.swift; sourceTree = "<group>"; };
 		EA02C72C2226CB9300AAF29F /* ChurchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChurchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA02C72F2226CB9300AAF29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +131,12 @@
 			isa = PBXGroup;
 			children = (
 				EA02C7332226CB9300AAF29F /* Main.storyboard */,
+				DEBE3BA6226864C900E047F5 /* Home.storyboard */,
+				DEBE3BA82268693400E047F5 /* Calendar.storyboard */,
+				DEBE3BAA22686A3E00E047F5 /* Location.storyboard */,
+				DEBE3BAC22686A5000E047F5 /* Give.storyboard */,
+				DEBE3BAE22686B6C00E047F5 /* Login.storyboard */,
+				DEBE3BB022686DF600E047F5 /* Manager.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -233,10 +251,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBE3BA92268693400E047F5 /* Calendar.storyboard in Resources */,
+				DEBE3BAD22686A5100E047F5 /* Give.storyboard in Resources */,
 				EA02C73A2226CB9500AAF29F /* LaunchScreen.storyboard in Resources */,
+				DEBE3BA7226864C900E047F5 /* Home.storyboard in Resources */,
+				DEBE3BB122686DF600E047F5 /* Manager.storyboard in Resources */,
 				EA7D3DCD22283569003C1122 /* GoogleService-Info.plist in Resources */,
+				DEBE3BAB22686A3E00E047F5 /* Location.storyboard in Resources */,
 				EA02C7372226CB9500AAF29F /* Assets.xcassets in Resources */,
 				EA02C7352226CB9300AAF29F /* Main.storyboard in Resources */,
+				DEBE3BAF22686B6C00E047F5 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
