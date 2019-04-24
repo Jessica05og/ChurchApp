@@ -145,7 +145,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcY-pI-KOj">
-                                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000023" height="202"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                                 <state key="normal" backgroundImage="back"/>
                                                 <connections>
                                                     <segue destination="Xoy-eb-OBg" kind="show" animates="NO" id="ybY-Qr-28O"/>
