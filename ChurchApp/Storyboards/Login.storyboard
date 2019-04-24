@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Tab Bar Controller-->
+        <!--Login-->
         <scene sceneID="kwj-E3-3MC">
             <objects>
                 <viewController storyboardIdentifier="MainTabBarController" id="w0u-1m-61H" customClass="MainTabBarController" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,7 +26,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Selah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="oyy-w5-jDW">
-                                <rect key="frame" x="156" y="298" width="102" height="20.5"/>
+                                <rect key="frame" x="156" y="273.5" width="102" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="LwR-3h-w9p"/>
                                 </constraints>
@@ -35,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="m0s-7c-zKv">
-                                <rect key="frame" x="102.5" y="372" width="209" height="162"/>
+                                <rect key="frame" x="102.5" y="347.5" width="209" height="162"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vm-0t-04W">
                                         <rect key="frame" x="0.0" y="0.0" width="209" height="30"/>
@@ -82,7 +82,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PA5-xg-xJX"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Login" image="login" landscapeImage="login" largeContentSizeImage="login" id="H6f-3B-0Ky"/>
                     <navigationItem key="navigationItem" id="c7t-M1-yn2"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="email" destination="5vm-0t-04W" id="oYo-d4-VDe"/>
                         <outlet property="password" destination="Qib-Pg-dCo" id="mrn-03-vqU"/>
@@ -95,5 +97,6 @@
     </scenes>
     <resources>
         <image name="Logo" width="220" height="220"/>
+        <image name="login" width="25" height="25"/>
     </resources>
 </document>

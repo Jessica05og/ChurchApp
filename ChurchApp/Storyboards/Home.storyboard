@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="asQ-s4-hO8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aam-pi-12N">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,13 +13,13 @@
         <!--View Controller-->
         <scene sceneID="FSy-K8-ndb">
             <objects>
-                <viewController id="lGF-oN-ict" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="lGF-oN-ict" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Xi-rL-27f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faF-oz-4O7">
-                                <rect key="frame" x="16" y="412" width="382" height="21"/>
+                                <rect key="frame" x="16" y="363" width="382" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,49 +43,49 @@
             <objects>
                 <viewController id="XHx-Jl-p3J" customClass="SocialMediaVC" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P5J-gR-T33">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="socialMedia" translatesAutoresizingMaskIntoConstraints="NO" id="Du6-9Q-VPM">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZe-MR-heU" userLabel="Instagram_Button">
-                                <rect key="frame" x="31.5" y="218.5" width="353" height="40"/>
+                                <rect key="frame" x="31.5" y="195.5" width="353" height="39.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="InstagramButton:" destination="XHx-Jl-p3J" eventType="touchUpInside" id="CI1-XZ-ESB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uo3-6i-aPu" userLabel="Facebook_Button">
-                                <rect key="frame" x="31.5" y="291.5" width="353" height="55.5"/>
+                                <rect key="frame" x="31.5" y="260.5" width="353" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="FacebookButton:" destination="XHx-Jl-p3J" eventType="touchUpInside" id="lZH-3u-wLD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVi-Ij-EHO" userLabel="Youtube_Button">
-                                <rect key="frame" x="31.5" y="365.5" width="353" height="59.5"/>
+                                <rect key="frame" x="31.5" y="327.5" width="353" height="58.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="YoutubeButton:" destination="XHx-Jl-p3J" eventType="touchUpInside" id="PA1-pK-8El"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GU-SO-wib" userLabel="Podcast_Button">
-                                <rect key="frame" x="31.5" y="446.5" width="353" height="59"/>
+                                <rect key="frame" x="31.5" y="400" width="353" height="59"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="PodcastButton:" destination="XHx-Jl-p3J" eventType="touchUpInside" id="qOT-ZU-f3S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nk5-e8-teE" userLabel="Spotify_Button">
-                                <rect key="frame" x="31.5" y="517.5" width="353" height="59.5"/>
+                                <rect key="frame" x="31.5" y="464.5" width="353" height="58.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="SpotifyButton:" destination="XHx-Jl-p3J" eventType="touchUpInside" id="0dr-79-jit"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO0-fb-hYE" userLabel="WebSite_Button">
-                                <rect key="frame" x="31.5" y="598.5" width="353" height="59"/>
+                                <rect key="frame" x="31.5" y="537.5" width="353" height="58.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="WebsiteButton:" destination="XHx-Jl-p3J" eventType="touchUpInside" id="SUu-l7-Bh3"/>
@@ -130,25 +130,25 @@
             </objects>
             <point key="canvasLocation" x="-1306" y="137"/>
         </scene>
-        <!--About UsVC-->
+        <!--HomeVC-->
         <scene sceneID="VCV-e4-eKv">
             <objects>
-                <viewController storyboardIdentifier="AboutUsVC" id="Bdl-RU-45P" customClass="AboutUsVC" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutUsVC" modalTransitionStyle="crossDissolve" id="Bdl-RU-45P" customClass="HomeVC" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="omo-2K-GYW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="vZf-RA-KML">
-                                <rect key="frame" x="10" y="103.5" width="394" height="748.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <subviews>
                                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Tkp-0V-fGb">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="185.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcY-pI-KOj">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="185.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000023" height="202"/>
                                                 <state key="normal" backgroundImage="back"/>
                                                 <connections>
-                                                    <segue destination="Xoy-eb-OBg" kind="show" id="ybY-Qr-28O"/>
+                                                    <segue destination="Xoy-eb-OBg" kind="show" animates="NO" id="ybY-Qr-28O"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -161,10 +161,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qkv-ZG-hbZ">
-                                        <rect key="frame" x="0.0" y="187.5" width="394" height="186"/>
+                                        <rect key="frame" x="0.0" y="204" width="414" height="201.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1X0-8L-qJb">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="186"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="201.5"/>
                                                 <state key="normal" image="discover" backgroundImage="way"/>
                                                 <connections>
                                                     <segue destination="9ko-S1-edB" kind="show" id="xxI-pf-mEZ"/>
@@ -180,13 +180,13 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fzu-RL-Rnw">
-                                        <rect key="frame" x="0.0" y="375.5" width="394" height="185.5"/>
+                                        <rect key="frame" x="0.0" y="407.5" width="414" height="202"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zq6-vC-GzD">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="185.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xr6-tp-HT3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="185.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <state key="normal" backgroundImage="mission">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -208,10 +208,10 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yK3-Wz-P7N">
-                                        <rect key="frame" x="0.0" y="563" width="394" height="185.5"/>
+                                        <rect key="frame" x="0.0" y="611.5" width="414" height="201.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecR-cA-zyY">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="185.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="201.5"/>
                                                 <state key="normal" backgroundImage="we are social">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -233,35 +233,37 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SGE-Lr-tUk" firstAttribute="trailing" secondItem="vZf-RA-KML" secondAttribute="trailing" constant="10" id="AYg-OR-xAd"/>
-                            <constraint firstItem="vZf-RA-KML" firstAttribute="height" secondItem="omo-2K-GYW" secondAttribute="height" multiplier="0.88" constant="-40" id="Kb9-xG-Xff"/>
-                            <constraint firstItem="SGE-Lr-tUk" firstAttribute="bottom" secondItem="vZf-RA-KML" secondAttribute="bottom" constant="10" id="LOV-a5-Sb2"/>
-                            <constraint firstItem="vZf-RA-KML" firstAttribute="leading" secondItem="SGE-Lr-tUk" secondAttribute="leading" constant="10" id="lee-lG-gUD"/>
+                            <constraint firstItem="SGE-Lr-tUk" firstAttribute="trailing" secondItem="vZf-RA-KML" secondAttribute="trailing" id="AYg-OR-xAd"/>
+                            <constraint firstItem="SGE-Lr-tUk" firstAttribute="bottom" secondItem="vZf-RA-KML" secondAttribute="bottom" id="LOV-a5-Sb2"/>
+                            <constraint firstItem="vZf-RA-KML" firstAttribute="top" secondItem="omo-2K-GYW" secondAttribute="top" id="dqj-mX-5Yd"/>
+                            <constraint firstItem="vZf-RA-KML" firstAttribute="leading" secondItem="SGE-Lr-tUk" secondAttribute="leading" id="lee-lG-gUD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SGE-Lr-tUk"/>
                     </view>
                     <navigationItem key="navigationItem" id="aUq-Ta-uo5"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCB-qy-XvB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2829" y="-829"/>
+            <point key="canvasLocation" x="-1957.9710144927537" y="-1120.3125"/>
         </scene>
-        <!--View Controller-->
+        <!--About UsVC-->
         <scene sceneID="8e7-9m-IDS">
             <objects>
-                <viewController id="Xoy-eb-OBg" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="Xoy-eb-OBg" customClass="AboutUsVC" customModule="ChurchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a05-Xa-f0P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5e-1X-xcN">
-                                <rect key="frame" x="16" y="438" width="382" height="21"/>
+                                <rect key="frame" x="16" y="389" width="382" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="B5e-1X-xcN" firstAttribute="leading" secondItem="gzP-sE-VXp" secondAttribute="leading" constant="16" id="7mk-fj-KaX"/>
                             <constraint firstItem="gzP-sE-VXp" firstAttribute="trailing" secondItem="B5e-1X-xcN" secondAttribute="trailing" constant="16" id="UV9-IB-EmY"/>
@@ -277,13 +279,13 @@
         <!--View Controller-->
         <scene sceneID="Gkp-3m-0xm">
             <objects>
-                <viewController id="9ko-S1-edB" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="9ko-S1-edB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h40-th-cu5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB0-s6-wa5">
-                                <rect key="frame" x="16" y="425" width="382" height="21"/>
+                                <rect key="frame" x="16" y="376" width="382" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -302,24 +304,24 @@
             </objects>
             <point key="canvasLocation" x="-2710" y="137"/>
         </scene>
-        <!--home-->
-        <scene sceneID="X2G-pP-y23">
+        <!--Home-->
+        <scene sceneID="SRu-ep-gJA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="asQ-s4-hO8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="home" image="home" landscapeImage="home" largeContentSizeImage="home" id="Wci-jQ-RBC"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="aam-pi-12N" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" landscapeImage="home" largeContentSizeImage="home" id="1Dg-EW-UG0"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3S-Oh-kkR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Yj-vc-v0y">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Bdl-RU-45P" kind="relationship" relationship="rootViewController" id="f2g-B3-LET"/>
+                        <segue destination="Bdl-RU-45P" kind="relationship" relationship="rootViewController" id="C1n-Yz-P7l"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uqm-1h-sgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0U-hM-bgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2867" y="-1838"/>
+            <point key="canvasLocation" x="-2868.115942028986" y="-1120.3125"/>
         </scene>
     </scenes>
     <resources>

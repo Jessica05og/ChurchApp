@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C66F10BB2CF649FC45A5155A /* Pods_ChurchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF63BBC057EDEA773DE5685 /* Pods_ChurchApp.framework */; };
+		DE2EF9CC2270DB5500D8B7E9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2EF9CB2270DB5500D8B7E9 /* HomeVC.swift */; };
 		DEBE3BA7226864C900E047F5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE3BA6226864C900E047F5 /* Home.storyboard */; };
 		DEBE3BA92268693400E047F5 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE3BA82268693400E047F5 /* Calendar.storyboard */; };
 		DEBE3BAB22686A3E00E047F5 /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE3BAA22686A3E00E047F5 /* Location.storyboard */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		4821A6EF20159ADDDE1D6154 /* Pods-ChurchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchApp.debug.xcconfig"; path = "Target Support Files/Pods-ChurchApp/Pods-ChurchApp.debug.xcconfig"; sourceTree = "<group>"; };
 		58F62EEF7044D55A12CA881E /* Pods-ChurchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchApp.release.xcconfig"; path = "Target Support Files/Pods-ChurchApp/Pods-ChurchApp.release.xcconfig"; sourceTree = "<group>"; };
+		DE2EF9CB2270DB5500D8B7E9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DEBE3BA6226864C900E047F5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DEBE3BA82268693400E047F5 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		DEBE3BAA22686A3E00E047F5 /* Location.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				EA02C7412226D87400AAF29F /* AboutUsVC.swift */,
 				DEC521842267CE9A0060E6AA /* RemoveVC.swift */,
 				EA7D3DCA22282C64003C1122 /* LoginViewController.swift */,
+				DE2EF9CB2270DB5500D8B7E9 /* HomeVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE3547C222FF75C00A7F2F5 /* SocialMediaVC.swift in Sources */,
+				DE2EF9CC2270DB5500D8B7E9 /* HomeVC.swift in Sources */,
 				EAE9F1DB22318CB10004241D /* RegisterVC.swift in Sources */,
 				EA7D3DCB22282C64003C1122 /* LoginViewController.swift in Sources */,
 				EA02C7322226CB9300AAF29F /* MainTabBarController.swift in Sources */,

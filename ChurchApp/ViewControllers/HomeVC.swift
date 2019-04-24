@@ -1,29 +1,25 @@
 //
-//  AboutUsVC.swift
+//  HomeVC.swift
 //  ChurchApp
 //
-//  Created by Jessica  Gomes on 2/27/19.
+//  Created by Cidox on 24/04/2019.
 //  Copyright © 2019 Jessica  Gomes. All rights reserved.
 //
 
 import UIKit
 
-class AboutUsVC: UIViewController {
+class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let logo = UIImage(named: "topLogo1.png")
-        let imageView = UIImageView(image:logo)
-        self.navigationItem.titleView = imageView
-    
+
+        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    
     
 
     /*
