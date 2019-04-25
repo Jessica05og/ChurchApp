@@ -31,6 +31,8 @@ class MainTabBarController: UIViewController {
             if user != nil {
                 print("User has sign IN")
                 
+                
+                
             
             //--------Call HOME VIEW LOGIN-----//
             

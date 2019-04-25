@@ -13,18 +13,22 @@ class AboutUsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let logo = UIImage(named: "topLogo1.png")
-        let imageView = UIImageView(image:logo)
-        self.navigationItem.titleView = imageView
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .done, target: self, action: #selector(backTapped))
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
+//        navigationController?.popViewController(animated: false)
     
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    
+    @objc func backTapped(sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: false)
+    }
 
     /*
     // MARK: - Navigation

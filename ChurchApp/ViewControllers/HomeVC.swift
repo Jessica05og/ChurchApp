@@ -2,7 +2,7 @@
 //  HomeVC.swift
 //  ChurchApp
 //
-//  Created by Cidox on 24/04/2019.
+//  Created by Jessica  Gomes on 24/04/2019.
 //  Copyright © 2019 Jessica  Gomes. All rights reserved.
 //
 
@@ -12,6 +12,7 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
