@@ -62,8 +62,6 @@ class RemoveVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         usersRef.child(indexPath.row.description).setValue(nil)
         
-        
-        
 
     }
     

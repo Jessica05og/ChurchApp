@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J6R-XQ-YxX">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--calendar-->
+        <scene sceneID="YQj-nw-WMy">
+            <objects>
+                <viewController id="J6R-XQ-YxX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Zf-Mc-rnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALENDAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKd-zX-9mH">
+                                <rect key="frame" x="121" y="68" width="172" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OeI-4B-aQO">
+                                <rect key="frame" x="42" y="137.5" width="332" height="180"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OneMoreSong" translatesAutoresizingMaskIntoConstraints="NO" id="xXU-gv-CvC">
+                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="180"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeekendAway" translatesAutoresizingMaskIntoConstraints="NO" id="dXg-59-9bL">
+                                        <rect key="frame" x="173.5" y="0.0" width="158.5" height="180"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dXg-59-9bL" firstAttribute="top" secondItem="OeI-4B-aQO" secondAttribute="top" id="YV7-j5-gKy"/>
+                                    <constraint firstItem="xXU-gv-CvC" firstAttribute="top" secondItem="OeI-4B-aQO" secondAttribute="top" id="cze-ek-AtK"/>
+                                    <constraint firstAttribute="trailing" secondItem="dXg-59-9bL" secondAttribute="trailing" id="gF4-Wm-fNw"/>
+                                    <constraint firstItem="xXU-gv-CvC" firstAttribute="leading" secondItem="OeI-4B-aQO" secondAttribute="leading" id="nAG-PL-UxE"/>
+                                    <constraint firstAttribute="bottom" secondItem="xXU-gv-CvC" secondAttribute="bottom" id="xt7-cO-gHw"/>
+                                    <constraint firstAttribute="bottom" secondItem="dXg-59-9bL" secondAttribute="bottom" id="zOf-AW-UCT"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ves-V0-awO">
+                                <rect key="frame" x="42" y="364" width="332" height="180"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flashmob" translatesAutoresizingMaskIntoConstraints="NO" id="GxC-wB-beR">
+                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="180"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Charity" translatesAutoresizingMaskIntoConstraints="NO" id="wEV-u0-ioU">
+                                        <rect key="frame" x="173.5" y="0.0" width="158.5" height="180"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GxC-wB-beR" firstAttribute="top" secondItem="ves-V0-awO" secondAttribute="top" id="5cw-Bm-fhX"/>
+                                    <constraint firstAttribute="bottom" secondItem="GxC-wB-beR" secondAttribute="bottom" id="LhF-o9-h3j"/>
+                                    <constraint firstAttribute="bottom" secondItem="wEV-u0-ioU" secondAttribute="bottom" id="h1n-nQ-Nhr"/>
+                                    <constraint firstItem="wEV-u0-ioU" firstAttribute="top" secondItem="ves-V0-awO" secondAttribute="top" id="jX8-Ok-5Ro"/>
+                                    <constraint firstAttribute="trailing" secondItem="wEV-u0-ioU" secondAttribute="trailing" id="sdA-sw-z8x"/>
+                                    <constraint firstItem="GxC-wB-beR" firstAttribute="leading" secondItem="ves-V0-awO" secondAttribute="leading" id="znc-wS-45K"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6tG-qH-9ux">
+                                <rect key="frame" x="42" y="590.5" width="332" height="180"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeekendAway" translatesAutoresizingMaskIntoConstraints="NO" id="6dW-Gl-4nZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="180"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OneMoreSong" translatesAutoresizingMaskIntoConstraints="NO" id="d3e-aE-PU8">
+                                        <rect key="frame" x="173.5" y="0.0" width="158.5" height="180"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6dW-Gl-4nZ" firstAttribute="top" secondItem="6tG-qH-9ux" secondAttribute="top" id="0oy-Y3-eVY"/>
+                                    <constraint firstItem="6dW-Gl-4nZ" firstAttribute="leading" secondItem="6tG-qH-9ux" secondAttribute="leading" id="H3N-8G-hV0"/>
+                                    <constraint firstAttribute="bottom" secondItem="6dW-Gl-4nZ" secondAttribute="bottom" id="NDG-8w-MK0"/>
+                                    <constraint firstAttribute="trailing" secondItem="d3e-aE-PU8" secondAttribute="trailing" id="Qz1-gE-R4A"/>
+                                    <constraint firstAttribute="bottom" secondItem="d3e-aE-PU8" secondAttribute="bottom" id="Ua1-ZD-OzE"/>
+                                    <constraint firstItem="d3e-aE-PU8" firstAttribute="top" secondItem="6tG-qH-9ux" secondAttribute="top" id="jO2-rt-U5t"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6tG-qH-9ux" firstAttribute="height" secondItem="8Zf-Mc-rnZ" secondAttribute="height" multiplier="0.2" constant="1" id="0Vi-an-drR"/>
+                            <constraint firstItem="ves-V0-awO" firstAttribute="centerY" secondItem="R8W-Lg-Ccg" secondAttribute="centerY" constant="1" id="3wG-Xw-jE4"/>
+                            <constraint firstItem="OeI-4B-aQO" firstAttribute="centerX" secondItem="R8W-Lg-Ccg" secondAttribute="centerX" constant="1" id="4O9-S5-ggD"/>
+                            <constraint firstItem="ves-V0-awO" firstAttribute="centerX" secondItem="R8W-Lg-Ccg" secondAttribute="centerX" constant="1" id="4fL-DR-SUr"/>
+                            <constraint firstItem="OeI-4B-aQO" firstAttribute="height" secondItem="8Zf-Mc-rnZ" secondAttribute="height" multiplier="0.2" constant="1" id="9f6-mn-3OW"/>
+                            <constraint firstItem="6tG-qH-9ux" firstAttribute="width" secondItem="8Zf-Mc-rnZ" secondAttribute="width" multiplier="0.8" constant="1" id="CmD-3N-uyz"/>
+                            <constraint firstItem="xKd-zX-9mH" firstAttribute="top" secondItem="R8W-Lg-Ccg" secondAttribute="top" constant="24" id="MEs-Di-7kc"/>
+                            <constraint firstItem="OeI-4B-aQO" firstAttribute="width" secondItem="8Zf-Mc-rnZ" secondAttribute="width" multiplier="0.8" constant="1" id="OK3-EN-iBt"/>
+                            <constraint firstItem="6tG-qH-9ux" firstAttribute="centerY" secondItem="R8W-Lg-Ccg" secondAttribute="centerY" multiplier="1.5" constant="1" id="b5S-cq-p42"/>
+                            <constraint firstItem="R8W-Lg-Ccg" firstAttribute="trailing" secondItem="xKd-zX-9mH" secondAttribute="trailing" constant="121" id="f2D-0D-da2"/>
+                            <constraint firstItem="6tG-qH-9ux" firstAttribute="centerX" secondItem="R8W-Lg-Ccg" secondAttribute="centerX" constant="1" id="gqb-Nj-eh7"/>
+                            <constraint firstItem="ves-V0-awO" firstAttribute="width" secondItem="8Zf-Mc-rnZ" secondAttribute="width" multiplier="0.8" constant="1" id="kQ6-7t-rYo"/>
+                            <constraint firstItem="ves-V0-awO" firstAttribute="height" secondItem="8Zf-Mc-rnZ" secondAttribute="height" multiplier="0.2" constant="1" id="ljK-CE-cbL"/>
+                            <constraint firstItem="OeI-4B-aQO" firstAttribute="centerY" secondItem="R8W-Lg-Ccg" secondAttribute="centerY" multiplier="0.5" constant="1" id="vKk-9w-DQM"/>
+                            <constraint firstItem="xKd-zX-9mH" firstAttribute="leading" secondItem="R8W-Lg-Ccg" secondAttribute="leading" constant="121" id="zwU-zp-LEU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R8W-Lg-Ccg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="calendar" image="calendar" landscapeImage="calendar" largeContentSizeImage="calendar" id="Ul4-SL-EVH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVa-sr-rPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1122" y="-641"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Charity" width="114.33333587646484" height="79.666664123535156"/>
+        <image name="Flashmob" width="114.33333587646484" height="79.666664123535156"/>
+        <image name="OneMoreSong" width="114.33333587646484" height="79.666664123535156"/>
+        <image name="WeekendAway" width="114.33333587646484" height="79.666664123535156"/>
+        <image name="calendar" width="25" height="25"/>
+    </resources>
+</document>

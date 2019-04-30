@@ -93,23 +93,14 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
             return
         }
         
-        let values: [String: Any] = ["position" : self.UserPosition.text ?? "",
-                                     "email" : self.EmailTextFild.text ?? "",
-                                     "contact" : self.ContactNumberTextFild.text ?? "",
-                                     "name" : self.NameTextFild.text ?? ""]
-        
-
-        
         if ValidPass(pass1: Password.text ?? "", pass2: Password2.text ?? "."){
             Auth.auth().createUser(withEmail: email, password: pass ){ (authResult, error) in
                 
                 if authResult?.user != nil {
-                    
-                    self.ref?.childByAutoId().setValue(values)
-//                    self.ref?.child(String(self.countUsers)).child("name").setValue(self.NameTextFild.text)
-//                    self.ref?.child(String(self.countUsers)).child("email").setValue(self.EmailTextFild.text)
-//                    self.ref?.child(String(self.countUsers)).child("contact").setValue(self.ContactNumberTextFild.text)
-//                    self.ref?.child(String(self.countUsers)).child("position").setValue(self.UserPosition.text)
+                    self.ref?.child(String(self.countUsers)).child("name").setValue(self.NameTextFild.text)
+                    self.ref?.child(String(self.countUsers)).child("email").setValue(self.EmailTextFild.text)
+                    self.ref?.child(String(self.countUsers)).child("contact").setValue(self.ContactNumberTextFild.text)
+                    self.ref?.child(String(self.countUsers)).child("position").setValue(self.UserPosition.text)
                     
                     let storyboard = UIStoryboard(name: "Manager", bundle: nil);
                     let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") 
