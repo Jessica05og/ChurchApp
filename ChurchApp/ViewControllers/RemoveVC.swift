@@ -11,7 +11,7 @@ import FirebaseAuth
 
 class RemoveVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let usersRef = Database.database().reference(withPath: "User")
+    var usersRef: DatabaseReference?
     var users: [User] = []
 
     @IBOutlet weak var tableView: UITableView!
@@ -19,7 +19,8 @@ class RemoveVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        usersRef.observe(.value, with: {
+        usersRef = Database.database().reference(withPath: "User")
+        usersRef!.observe(.value, with: {
             snapshot in
             
             guard let values = snapshot.value as? [AnyObject] else{return}
@@ -60,7 +61,20 @@ class RemoveVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        usersRef.child(indexPath.row.description).setValue(nil)
+        //usersRef!.child(indexPath.row.description).setValue(nil)
+        
+        for i in 0..<users.count{
+            usersRef!.child(i.description).setValue(nil)
+        }
+        users.remove(at: indexPath.row)
+        for i in 0..<users.count{
+            usersRef!.child(String(i)).child("name").setValue(users[i].name)
+            usersRef!.child(String(i)).child("email").setValue(users[i].email)
+            usersRef!.child(String(i)).child("contact").setValue(users[i].contact)
+            usersRef!.child(String(i)).child("position").setValue(users[i].position)
+        }
+        
+        
         
 
     }

@@ -347,7 +347,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <connections>
-                        <outlet property="tableView" destination="CZf-zT-UFa" id="xvg-cL-GfN"/>
+                        <outlet property="tableView" destination="CZf-zT-UFa" id="TCe-Gk-tVj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8F-bD-WRy" userLabel="First Responder" sceneMemberID="firstResponder"/>
