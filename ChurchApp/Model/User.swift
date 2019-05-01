@@ -6,6 +6,8 @@
 //  Copyright © 2019 Jessica  Gomes. All rights reserved.
 //
 
+var userNameAuth: String = "Test"
+var positionAuth: String = "Admin"
 
 struct User {
     

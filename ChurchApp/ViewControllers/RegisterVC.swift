@@ -20,6 +20,8 @@ class RegisterVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.setupBackButton()
         ref = Database.database().reference(withPath: "User")
         
         ref!.observe(.value, with: {snapshot in

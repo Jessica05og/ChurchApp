@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C66F10BB2CF649FC45A5155A /* Pods_ChurchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF63BBC057EDEA773DE5685 /* Pods_ChurchApp.framework */; };
+		DE21F581227913D600ECB125 /* NetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21F580227913D600ECB125 /* NetworkVC.swift */; };
+		DE21F58322799D6F00ECB125 /* NetworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21F58222799D6F00ECB125 /* NetworkCell.swift */; };
+		DE21F58522799EA100ECB125 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21F58422799EA100ECB125 /* Message.swift */; };
 		DE2EF9CC2270DB5500D8B7E9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2EF9CB2270DB5500D8B7E9 /* HomeVC.swift */; };
 		DE5E25DE2271C15800E6113E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E25DD2271C15800E6113E /* User.swift */; };
 		DEBE3BA7226864C900E047F5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE3BA6226864C900E047F5 /* Home.storyboard */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		4821A6EF20159ADDDE1D6154 /* Pods-ChurchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchApp.debug.xcconfig"; path = "Target Support Files/Pods-ChurchApp/Pods-ChurchApp.debug.xcconfig"; sourceTree = "<group>"; };
 		58F62EEF7044D55A12CA881E /* Pods-ChurchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchApp.release.xcconfig"; path = "Target Support Files/Pods-ChurchApp/Pods-ChurchApp.release.xcconfig"; sourceTree = "<group>"; };
+		DE21F580227913D600ECB125 /* NetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkVC.swift; sourceTree = "<group>"; };
+		DE21F58222799D6F00ECB125 /* NetworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCell.swift; sourceTree = "<group>"; };
+		DE21F58422799EA100ECB125 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DE2EF9CB2270DB5500D8B7E9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DE5E25DD2271C15800E6113E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DEBE3BA6226864C900E047F5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5E25DD2271C15800E6113E /* User.swift */,
+				DE21F58422799EA100ECB125 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				DEDC89642271DA3000C0A2D5 /* RemoveCell.swift */,
+				DE21F58222799D6F00ECB125 /* NetworkCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 				DEC521842267CE9A0060E6AA /* RemoveVC.swift */,
 				EA7D3DCA22282C64003C1122 /* LoginViewController.swift */,
 				DE2EF9CB2270DB5500D8B7E9 /* HomeVC.swift */,
+				DE21F580227913D600ECB125 /* NetworkVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -380,8 +389,11 @@
 				EA02C7322226CB9300AAF29F /* MainTabBarController.swift in Sources */,
 				EA6FDD5B22459A07004D4803 /* ComposeVC.swift in Sources */,
 				EA02C7442226D8B500AAF29F /* LocationVC.swift in Sources */,
+				DE21F58522799EA100ECB125 /* Message.swift in Sources */,
 				EA6FDD5E2245A2D4004D4803 /* TextTableViewCell.swift in Sources */,
+				DE21F581227913D600ECB125 /* NetworkVC.swift in Sources */,
 				DE5E25DE2271C15800E6113E /* User.swift in Sources */,
+				DE21F58322799D6F00ECB125 /* NetworkCell.swift in Sources */,
 				DEDC89652271DA3000C0A2D5 /* RemoveCell.swift in Sources */,
 				EA02C7422226D87400AAF29F /* AboutUsVC.swift in Sources */,
 				EA6FDD5922459981004D4803 /* MessageVC.swift in Sources */,

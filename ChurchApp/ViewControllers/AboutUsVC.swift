@@ -13,9 +13,7 @@ class AboutUsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .done, target: self, action: #selector(backTapped))
-        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
-//        navigationController?.popViewController(animated: false)
+        self.setupBackButton()
     
     }
     
@@ -26,10 +24,7 @@ class AboutUsVC: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    @objc func backTapped(sender: UIBarButtonItem) {
-        navigationController?.popViewController(animated: false)
-    }
-
+    
     /*
     // MARK: - Navigation
 

@@ -1,5 +1,6 @@
 
 import Foundation
+import UIKit
 
 // more info about regex:
 // https://emailregex.com/regular-expressions-cheat-sheet/
@@ -30,3 +31,18 @@ extension String{
     
     
 }
+
+
+extension UIViewController{
+    func setupBackButton(){
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .done, target: self, action: #selector(backTapped))
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
+    }
+    
+    
+    @objc func backTapped(sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: false)
+    }
+}
+
+
