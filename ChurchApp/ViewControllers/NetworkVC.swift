@@ -49,7 +49,7 @@ class NetworkVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     self.messageRef?.child(String(self.messages.count)).child("message").setValue(self.sendMessage.text)
     self.messageRef?.child(String(self.messages.count)).child("position").setValue(positionAuth)
         
-        self.messageRef?.child(String(self.messages.count)).child("id").setValue(String(self.messages.count))
+    self.messageRef?.child(String(self.messages.count)).child("id").setValue(String(self.messages.count))
         
         
         

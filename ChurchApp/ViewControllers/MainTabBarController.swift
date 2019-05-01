@@ -31,7 +31,16 @@ class MainTabBarController: UIViewController {
             if user != nil {
                 print("User has sign IN")
                 
+                let ref = Database.database().reference().child("User").queryOrdered(byChild: "email").queryEqual(toValue : self.email.text)
                 
+                ref.observe(.value, with: {
+                    snapshot in
+                    guard let user = snapshot.value as? [AnyObject] else{return}
+                    guard let position = user[0].value(forKeyPath: "position") as? String else {return}
+                    guard let name = user[0].value(forKeyPath: "name") as? String else {return}
+                    userNameAuth = name
+                    positionAuth = position
+                    })
                 
             
             //--------Call HOME VIEW LOGIN-----//
