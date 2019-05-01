@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C66F10BB2CF649FC45A5155A /* Pods_ChurchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF63BBC057EDEA773DE5685 /* Pods_ChurchApp.framework */; };
+		DE1395DD227A1A4B00CA216B /* videoplayback.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DE1395DC227A17CE00CA216B /* videoplayback.mp4 */; };
 		DE21F581227913D600ECB125 /* NetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21F580227913D600ECB125 /* NetworkVC.swift */; };
 		DE21F58322799D6F00ECB125 /* NetworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21F58222799D6F00ECB125 /* NetworkCell.swift */; };
 		DE21F58522799EA100ECB125 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21F58422799EA100ECB125 /* Message.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		4821A6EF20159ADDDE1D6154 /* Pods-ChurchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchApp.debug.xcconfig"; path = "Target Support Files/Pods-ChurchApp/Pods-ChurchApp.debug.xcconfig"; sourceTree = "<group>"; };
 		58F62EEF7044D55A12CA881E /* Pods-ChurchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchApp.release.xcconfig"; path = "Target Support Files/Pods-ChurchApp/Pods-ChurchApp.release.xcconfig"; sourceTree = "<group>"; };
+		DE1395DC227A17CE00CA216B /* videoplayback.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoplayback.mp4; sourceTree = "<group>"; };
 		DE21F580227913D600ECB125 /* NetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkVC.swift; sourceTree = "<group>"; };
 		DE21F58222799D6F00ECB125 /* NetworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCell.swift; sourceTree = "<group>"; };
 		DE21F58422799EA100ECB125 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		DEBE3BA32268604600E047F5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DE1395DC227A17CE00CA216B /* videoplayback.mp4 */,
 				EA7D3DCC22283569003C1122 /* GoogleService-Info.plist */,
 				EA02C73B2226CB9500AAF29F /* Info.plist */,
 				EA02C7362226CB9500AAF29F /* Assets.xcassets */,
@@ -288,6 +291,7 @@
 				DEBE3BA92268693400E047F5 /* Calendar.storyboard in Resources */,
 				DEBE3BAD22686A5100E047F5 /* Give.storyboard in Resources */,
 				EA02C73A2226CB9500AAF29F /* LaunchScreen.storyboard in Resources */,
+				DE1395DD227A1A4B00CA216B /* videoplayback.mp4 in Resources */,
 				DEBE3BA7226864C900E047F5 /* Home.storyboard in Resources */,
 				DEBE3BB122686DF600E047F5 /* Manager.storyboard in Resources */,
 				EA7D3DCD22283569003C1122 /* GoogleService-Info.plist in Resources */,

@@ -38,21 +38,30 @@ class LocationVC: UIViewController {
     // Video from youtube
     // How to get to Selah Church
     
-    let videoURL = "https://www.youtube.com/watch?v=C-diaEUM8KU"
+    let videoURL = "https://www.youtube.com/embed/C-diaEUM8KU"
     
     func playVideo(){
-        let videoURL = NSURL(string: self.videoURL)!
+//        let videoURL = NSURL(string: self.videoURL)!
+//
+//        let player = AVPlayer(url:  videoURL as URL)
+//        let playerVC = AVPlayerViewController()
+//
+//        playerVC.player = player
+//
+//        self.present(playerVC, animated: true)
+//        { () -> Void in
+//
+//            playerVC.player!.play()
+//
+//        }
         
-        let player = AVPlayer(url:  videoURL as URL)
-        let playerVC = AVPlayerViewController()
-        
-        playerVC.player = player
-        
-        self.present(playerVC, animated: true)
-        { () -> Void in
-            
-            playerVC.player!.play()
-            
+//        let videoURL = URL(string: "https://www.youtube.com/embed/C-diaEUM8KU")
+        let videoURL: NSURL = Bundle.main.url(forResource: "videoplayback", withExtension: "mp4")! as NSURL
+        let player = AVPlayer(url: videoURL as URL)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
         }
     }
 }
